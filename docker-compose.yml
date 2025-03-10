@@ -20,7 +20,7 @@ services:
       postgresql:
         condition: service_healthy
     environment:
-      - TZ=Asia/Kolkata
+      - TZ=America/Fortaleza
 
       - DB_ADAPTER=postgresql
       - DB_HOST=postgresql
@@ -44,13 +44,13 @@ services:
       - REDMINE_BACKUP_EXPIRY=
       - REDMINE_BACKUP_TIME=
 
-      - SMTP_ENABLED=false
+      - SMTP_ENABLED=true
       - SMTP_METHOD=smtp
       - SMTP_DOMAIN=www.example.com
       - SMTP_HOST=smtp.gmail.com
       - SMTP_PORT=587
-      - SMTP_USER=mailer@example.com
-      - SMTP_PASS=password
+      - SMTP_USER=uires.tapajos@iasolaris.com.br
+      - SMTP_PASS=fvjyivitpvipkfpw
       - SMTP_STARTTLS=true
       - SMTP_AUTHENTICATION=:login
 
